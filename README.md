@@ -1,8 +1,5 @@
 # domInjector
 =====================
-Read Me
-=====================
-## About
 An Easy jQuery plugin, Which lets you to use the HTML dynamically for a JSON or standard js data objects. 
 domInjector is a simple jQuery plugin to generate dynamic dom elements on fly. You just need to initialize 
 the domInjector() method for the container which holds the html part that needs to be dynamically created along with
