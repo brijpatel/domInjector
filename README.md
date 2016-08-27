@@ -1,6 +1,8 @@
-# domInjector
+dom-injector-js
 =====================
-An Easy jQuery plugin, Which lets you to use the HTML dynamically for a JSON or standard js data objects. 
+Read Me
+=====================
+## About
 domInjector is a simple jQuery plugin to generate dynamic dom elements on fly. You just need to initialize 
 the domInjector() method for the container which holds the html part that needs to be dynamically created along with
 the dynamic data set, 
@@ -27,7 +29,16 @@ to put values from the data set you just need to put the keys inside a double sq
 and to write an expression with all your standard logics you need to put that inside double hash set ##your expression##
 
 Example: 
-For a full and working example, please Refer to the repository's readme file
+
+<div id="yourcontainer" style="visibility: hidden;">
+	<div style="float: left; width:19%;">[[name]]</div>
+	<div style="float: left; width:19%;">[[email]]</div>
+	<div style="float: left; width:19%;">##([[status]] == '1')?'Active':(([[status]] == '0')?'Not Verified':'Suspended')##</div>
+	<div style="float: left; width:19%;">##showDate('[[date]]')##</div>
+	<div style="float: left; width:19%;">Rs. [[balance]]/- ##(minBalance > [[balance]])?'Low Balance':''##</div>
+	<div style="clear: both;"></div>
+</div>
+
 
 
 ## Credit
